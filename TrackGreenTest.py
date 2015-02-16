@@ -4,7 +4,7 @@ __author__ = 'Hank'
 import numpy as np
 import cv2
 
-img = cv2.imread('GreenLED.png')
+img = cv2.imread('OriginalPic.png')
 
 
 checkx = 740
