@@ -18,10 +18,13 @@ while(True):
 
     res = cv2.bitwise_and(frame, frame, mask= mask)
 
+    '''
     gray = cv2.cvtColor(res, cv2.COLOR_BGR2GRAY)
+
 
     blobs = cv2.HoughCircles(gray, cv.CV_HOUGH_GRADIENT, 1, 20, param1=50, param2=30, minRadius=0, maxRadius=0)
     blobs = np.uint16(np.around(blobs))
+
 
     for i in blobs[0, :]:
         #outer circle
@@ -31,6 +34,7 @@ while(True):
         cv2.circle(res,(i[0],i[1]),2,(0,0,255),3)
         cv2.circle(frame,(i[0],i[1]),2,(0,0,255),3)
 
+    '''
 
     #cv2.imshow('pic', img)
 
