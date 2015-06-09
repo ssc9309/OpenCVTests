@@ -7,6 +7,7 @@ import cv2.cv as cv
 lower_Green = np.array([50, 100, 100])
 upper_Green = np.array([70, 255, 255])
 
+#0 is for the first camera
 cap = cv2.VideoCapture(0)
 
 while(True):
